@@ -198,7 +198,7 @@ public struct LineChartView: View {
 struct WidgetView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LineChartView(data: [8,23,54,32,12,37,7,23,43], dataHead: [-8,-23,-54,-32,-12,-37,-7,-23,-43], title: "Line chart", legend: "Basic")
+            LineChartView(data: [8,23,54,32,12,37,7,23,43], headData: [-8,-23,-54,-32,-12,-37,-7,-23,-43], title: "Line chart", legend: "Basic")
                 .environment(\.colorScheme, .light)
         }
     }
