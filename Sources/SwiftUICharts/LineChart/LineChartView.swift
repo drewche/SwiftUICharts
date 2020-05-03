@@ -28,7 +28,7 @@ public struct LineChartView: View {
     @State private var currentValue: Double = 2 {
         didSet{
             if (oldValue != self.currentValue && showIndicatorDot) {
-                HapticFeedback.playSelection()
+//                HapticFeedback.playSelection()
             }
             
         }
@@ -36,7 +36,7 @@ public struct LineChartView: View {
     @State private var currentHeadValue: Double = 2 {
         didSet{
             if (oldValue != self.currentHeadValue && showHeadIndicatorDot) {
-                HapticFeedback.playSelection()
+//                HapticFeedback.playSelection()
             }
             
         }
@@ -71,7 +71,7 @@ public struct LineChartView: View {
         ZStack(alignment: .center){
             RoundedRectangle(cornerRadius: 20)
                 .fill(self.colorScheme == .dark ? self.darkModeStyle.backgroundColor : self.style.backgroundColor)
-                .shadow(color: self.style.dropShadowColor, radius: self.dropShadow ? 8 : 0)
+                .shadow(color: Color(hexString: "#D9DADC"), radius: self.dropShadow ? 8 : 0)
             VStack {
                 HStack {
                     if(!self.showIndicatorDot && !self.showHeadIndicatorDot){
@@ -121,7 +121,7 @@ public struct LineChartView: View {
                                     showIndicator: self.$showIndicatorDot,
                                     flip: false,
                                     minDataValue: .constant(0),
-                                    maxDataValue: .constant(70),
+                                    maxDataValue: .constant(nil),
                                     showBackground: false,
                                     gradient: GradientColors.orange
                                 )
@@ -131,7 +131,7 @@ public struct LineChartView: View {
                             .offset(x: 0, y: 0)
                         
                         }
-                    }.frame(width: self.frame.width - 30, height: self.frame.height)
+                    }.frame(width: self.frame.width - 30, height: self.frame.height - 30)
                     .gesture(DragGesture()
                     .onChanged({ value in
                         self.touchLocation = value.location
@@ -166,16 +166,16 @@ public struct LineChartView: View {
                                     touchLocation: self.$touchLocation,
                                     showIndicator: self.$showHeadIndicatorDot,
                                     flip: false,
-                                    minDataValue: .constant(-70),
+                                    minDataValue: .constant(nil),
                                     maxDataValue: .constant(0),
                                     showBackground: false
                                 )
                             }
-                            .frame(width: frame.width - 30, height: frame.height)
+                            .frame(width: frame.width - 30, height: frame.height - 30)
                             .clipShape(RoundedRectangle(cornerRadius: 20))
                             .offset(x: 0, y: 0)
                         }
-                    }.frame(width: self.frame.width - 30, height: self.frame.height)
+                    }.frame(width: self.frame.width - 30, height: self.frame.height - 30)
                     .gesture(DragGesture()
                     .onChanged({ value in
                         self.touchLocation = value.location
@@ -195,7 +195,7 @@ public struct LineChartView: View {
                 Divider()
                     .padding(.leading, 25)
                     .padding(.bottom, 3)
-                Text("Time (s)")
+                Text("Time (ms)")
                     .font(.system(size: 11, weight: .bold, design: .default))
                     .foregroundColor(self.colorScheme == .dark ?  self.darkModeStyle.legendTextColor :self.style.legendTextColor)
                     .offset(y: -5)
@@ -245,7 +245,7 @@ public struct LineChartView: View {
 struct WidgetView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LineChartView(data: [8,23,54,32,12,37,7,23,43], headData: [-8,-23,-54,-32,-12,-37,-7,-23,-43], title: "Line chart", legend: "Basic")
+            LineChartView(data: [0.3,0.2,0.1,0.4,0.6,0.5,0.4,0.1,0.1], headData: [-0.3,-0.2,-0.1,-0.4,-0.6,-0.5,-0.4,-0.1,-0.1], title: "Line chart", legend: "Basic")
                 .environment(\.colorScheme, .light)
         }
     }
