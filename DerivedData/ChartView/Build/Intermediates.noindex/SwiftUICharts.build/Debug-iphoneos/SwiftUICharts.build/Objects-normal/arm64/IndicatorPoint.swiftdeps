@@ -1,0 +1,141 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "IndicatorPoint"
+- "IndicatorPoint_Previews"
+provides-nominal:
+- "13SwiftUICharts14IndicatorPointV"
+- "13SwiftUICharts23IndicatorPoint_PreviewsV"
+provides-member:
+- ["13SwiftUICharts14IndicatorPointV", ""]
+- ["13SwiftUICharts23IndicatorPoint_PreviewsV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "Circle"
+- !private "Color"
+- !private "Colors"
+- "FloatLiteralType"
+- "IndicatorPoint"
+- "IndicatorPoint_Previews"
+- !private "IntegerLiteralType"
+- "PreviewProvider"
+- !private "StrokeStyle"
+- "View"
+- !private "ZStack"
+depends-member:
+- !private ["7SwiftUI10AnimatableP", "fill"]
+- !private ["7SwiftUI10AnimatableP", "init"]
+- !private ["7SwiftUI10AnimatableP", "stroke"]
+- !private ["7SwiftUI6CircleV", "fill"]
+- !private ["7SwiftUI6CircleV", "init"]
+- !private ["7SwiftUI6CircleV", "stroke"]
+- !private ["7SwiftUI5ColorV", "white"]
+- !private ["13SwiftUICharts6ColorsV", "IndicatorKnob"]
+- !private ["13SwiftUICharts6ColorsV", "LegendColor"]
+- !private ["s23CustomStringConvertibleP", "white"]
+- !private ["SQ", "init"]
+- !private ["SQ", "white"]
+- !private ["SH", "white"]
+- ["13SwiftUICharts14IndicatorPointV", "Body"]
+- !private ["13SwiftUICharts14IndicatorPointV", "Circle"]
+- !private ["13SwiftUICharts14IndicatorPointV", "Color"]
+- !private ["13SwiftUICharts14IndicatorPointV", "Colors"]
+- !private ["13SwiftUICharts14IndicatorPointV", "StrokeStyle"]
+- ["13SwiftUICharts14IndicatorPointV", "View"]
+- !private ["13SwiftUICharts14IndicatorPointV", "ZStack"]
+- ["13SwiftUICharts14IndicatorPointV", "_Default_Body"]
+- ["13SwiftUICharts14IndicatorPointV", "_makeView"]
+- ["13SwiftUICharts14IndicatorPointV", "_makeViewList"]
+- ["13SwiftUICharts14IndicatorPointV", "body"]
+- ["13SwiftUICharts14IndicatorPointV", "deinit"]
+- ["13SwiftUICharts14IndicatorPointV", "init"]
+- !private ["13SwiftUICharts23IndicatorPoint_PreviewsV", "IndicatorPoint"]
+- ["13SwiftUICharts23IndicatorPoint_PreviewsV", "Previews"]
+- ["13SwiftUICharts23IndicatorPoint_PreviewsV", "View"]
+- ["13SwiftUICharts23IndicatorPoint_PreviewsV", "_Default_Previews"]
+- ["13SwiftUICharts23IndicatorPoint_PreviewsV", "_platform"]
+- ["13SwiftUICharts23IndicatorPoint_PreviewsV", "_previews"]
+- ["13SwiftUICharts23IndicatorPoint_PreviewsV", "deinit"]
+- ["13SwiftUICharts23IndicatorPoint_PreviewsV", "init"]
+- ["13SwiftUICharts23IndicatorPoint_PreviewsV", "platform"]
+- ["13SwiftUICharts23IndicatorPoint_PreviewsV", "previews"]
+- !private ["7SwiftUI15InsettableShapeP", "fill"]
+- !private ["7SwiftUI15InsettableShapeP", "init"]
+- !private ["7SwiftUI15InsettableShapeP", "stroke"]
+- !private ["7SwiftUI15PreviewProviderP", "IndicatorPoint"]
+- ["7SwiftUI15PreviewProviderP", "Previews"]
+- ["7SwiftUI15PreviewProviderP", ""]
+- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI15PreviewProviderP", "_platform"]
+- ["7SwiftUI15PreviewProviderP", "_previews"]
+- ["7SwiftUI15PreviewProviderP", "platform"]
+- ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["7SwiftUI5ShapeP", "fill"]
+- !private ["7SwiftUI5ShapeP", "init"]
+- !private ["7SwiftUI5ShapeP", "stroke"]
+- !private ["7SwiftUI10ShapeStyleP", "white"]
+- !private ["7SwiftUI11StrokeStyleV", "init"]
+- ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "Circle"]
+- !private ["7SwiftUI4ViewP", "Color"]
+- !private ["7SwiftUI4ViewP", "Colors"]
+- !private ["7SwiftUI4ViewP", "StrokeStyle"]
+- !private ["7SwiftUI4ViewP", "ZStack"]
+- ["7SwiftUI4ViewP", ""]
+- ["7SwiftUI4ViewP", "_Default_Body"]
+- ["7SwiftUI4ViewP", "_makeView"]
+- ["7SwiftUI4ViewP", "_makeViewList"]
+- ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "fill"]
+- !private ["7SwiftUI4ViewP", "frame"]
+- !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "shadow"]
+- !private ["7SwiftUI4ViewP", "stroke"]
+- !private ["7SwiftUI4ViewP", "white"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["7SwiftUI6ZStackV", "frame"]
+- !private ["7SwiftUI6ZStackV", "init"]
+- !private ["7SwiftUI16_PreviewProviderP", "IndicatorPoint"]
+- ["7SwiftUI16_PreviewProviderP", "Previews"]
+- ["7SwiftUI16_PreviewProviderP", ""]
+- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI16_PreviewProviderP", "_platform"]
+- ["7SwiftUI16_PreviewProviderP", "_previews"]
+- ["7SwiftUI16_PreviewProviderP", "platform"]
+- ["7SwiftUI16_PreviewProviderP", "previews"]
+depends-nominal:
+- !private "7SwiftUI10AnimatableP"
+- !private "7SwiftUI6CircleV"
+- !private "7SwiftUI5ColorV"
+- !private "13SwiftUICharts6ColorsV"
+- !private "s23CustomStringConvertibleP"
+- !private "SQ"
+- !private "SH"
+- "13SwiftUICharts14IndicatorPointV"
+- "13SwiftUICharts23IndicatorPoint_PreviewsV"
+- !private "7SwiftUI15InsettableShapeP"
+- "7SwiftUI15PreviewProviderP"
+- !private "7SwiftUI5ShapeP"
+- !private "7SwiftUI10ShapeStyleP"
+- !private "7SwiftUI11StrokeStyleV"
+- "7SwiftUI4ViewP"
+- !private "7SwiftUI11ViewBuilderV"
+- !private "7SwiftUI6ZStackV"
+- "7SwiftUI16_PreviewProviderP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1b3558997ab41f5db130e2298430a7ab"

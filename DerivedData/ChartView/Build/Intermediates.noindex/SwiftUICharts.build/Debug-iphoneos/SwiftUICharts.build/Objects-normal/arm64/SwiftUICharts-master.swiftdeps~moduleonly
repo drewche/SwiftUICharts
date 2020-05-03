@@ -1,0 +1,20 @@
+version: "Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+options: "2b3eb19f189da1020ac9edda6206bb4e"
+build_time: [1588472987, 526875000]
+inputs:
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/BarChart/BarChartCell.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/BarChart/BarChartRow.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/BarChart/BarChartView.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/BarChart/LabelView.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/Helpers.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/LineChart/IndicatorPoint.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/LineChart/Legend.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/LineChart/Line.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/LineChart/LineChartView.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/LineChart/LineView.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/LineChart/MagnifierRect.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/LineChart/MultiLineChartView.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/LineChart/Path+QuadCurve.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/PieChart/PieChartCell.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/PieChart/PieChartRow.swift": [1587910949, 0]
+  "/Users/drewche/Documents/ChartView/Sources/SwiftUICharts/PieChart/PieChartView.swift": [1587910949, 0]

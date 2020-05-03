@@ -1,0 +1,618 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Line"
+- "Line_Previews"
+provides-nominal:
+- "13SwiftUICharts4LineV"
+- "13SwiftUICharts13Line_PreviewsV"
+provides-member:
+- ["13SwiftUICharts4LineV", ""]
+- ["13SwiftUICharts13Line_PreviewsV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "&&"
+- !private "*"
+- !private "+"
+- !private "-"
+- !private "/"
+- !private "<"
+- !private "<="
+- !private "Animation"
+- "AssignmentPrecedence"
+- "Binding"
+- "Bool"
+- "BooleanLiteralType"
+- "CGFloat"
+- "CGPoint"
+- "CGRect"
+- "ChartData"
+- "Colors"
+- "Double"
+- "FloatLiteralType"
+- !private "GeometryReader"
+- !private "Gradient"
+- "GradientColor"
+- !private "IndicatorPoint"
+- "Int"
+- "IntegerLiteralType"
+- "Line"
+- "Line_Previews"
+- !private "LinearGradient"
+- "ObservedObject"
+- "Path"
+- "PreviewProvider"
+- "State"
+- !private "StrokeStyle"
+- "TernaryPrecedence"
+- "View"
+- !private "ZStack"
+- !private "print"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["7SwiftUI5AngleV", "degrees"]
+- !private ["7SwiftUI10AnimatableP", "bottom"]
+- !private ["7SwiftUI10AnimatableP", "center"]
+- !private ["7SwiftUI10AnimatableP", "closedLinePathWithPoints"]
+- !private ["7SwiftUI10AnimatableP", "degrees"]
+- !private ["7SwiftUI10AnimatableP", "fill"]
+- !private ["7SwiftUI10AnimatableP", "height"]
+- !private ["7SwiftUI10AnimatableP", "init"]
+- !private ["7SwiftUI10AnimatableP", "leading"]
+- !private ["7SwiftUI10AnimatableP", "linePathWithPoints"]
+- !private ["7SwiftUI10AnimatableP", "point"]
+- !private ["7SwiftUI10AnimatableP", "quadClosedCurvedPathWithPoints"]
+- !private ["7SwiftUI10AnimatableP", "quadCurvedPathWithPoints"]
+- !private ["7SwiftUI10AnimatableP", "size"]
+- !private ["7SwiftUI10AnimatableP", "stroke"]
+- !private ["7SwiftUI10AnimatableP", "top"]
+- !private ["7SwiftUI10AnimatableP", "trailing"]
+- !private ["7SwiftUI10AnimatableP", "trim"]
+- !private ["7SwiftUI10AnimatableP", "width"]
+- !private ["7SwiftUI10AnimatableP", "x"]
+- !private ["7SwiftUI9AnimationV", "callAsFunction"]
+- !private ["7SwiftUI9AnimationV", "delay"]
+- !private ["7SwiftUI9AnimationV", "easeIn"]
+- !private ["7SwiftUI9AnimationV", "easeOut"]
+- !private ["7SwiftUI13AnyTransitionV", "opacity"]
+- !private ["Sa", "count"]
+- !private ["Sa", "max"]
+- !private ["Sa", "min"]
+- !private ["SK", "count"]
+- !private ["SK", "max"]
+- !private ["SK", "min"]
+- !private ["SB", "init"]
+- !private ["7SwiftUI7BindingV", "constant"]
+- !private ["12CoreGraphics7CGFloatV", "init"]
+- !private ["So10CGLineJoinV", "round"]
+- !private ["So7CGPointV", "init"]
+- !private ["So7CGPointV", "x"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGSizeV", "height"]
+- !private ["So6CGSizeV", "width"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "max"]
+- !private ["s7CVarArgP", "min"]
+- ["13SwiftUICharts9ChartDataC", "deinit"]
+- !private ["13SwiftUICharts9ChartDataC", "init"]
+- !private ["13SwiftUICharts9ChartDataC", "onlyPoints"]
+- !private ["13SwiftUICharts9ChartDataC", "points"]
+- !private ["Sl", "count"]
+- !private ["Sl", "max"]
+- !private ["Sl", "min"]
+- !private ["7SwiftUI5ColorV", "white"]
+- ["13SwiftUICharts6ColorsV", "GradientNeonBlue"]
+- ["13SwiftUICharts6ColorsV", "GradientPurple"]
+- !private ["13SwiftUICharts6ColorsV", "GradientUpperBlue"]
+- !private ["SL", "degrees"]
+- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "max"]
+- !private ["10Foundation15ContiguousBytesP", "min"]
+- !private ["7SwiftUI15CoordinateSpaceO", "local"]
+- !private ["s28CustomDebugStringConvertibleP", "callAsFunction"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "delay"]
+- !private ["s28CustomDebugStringConvertibleP", "easeIn"]
+- !private ["s28CustomDebugStringConvertibleP", "easeOut"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "max"]
+- !private ["s28CustomDebugStringConvertibleP", "min"]
+- !private ["s28CustomDebugStringConvertibleP", "none"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
+- !private ["s28CustomDebugStringConvertibleP", "some"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s28CustomDebugStringConvertibleP", "x"]
+- !private ["s17CustomReflectableP", "callAsFunction"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "delay"]
+- !private ["s17CustomReflectableP", "easeIn"]
+- !private ["s17CustomReflectableP", "easeOut"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "max"]
+- !private ["s17CustomReflectableP", "min"]
+- !private ["s17CustomReflectableP", "none"]
+- !private ["s17CustomReflectableP", "size"]
+- !private ["s17CustomReflectableP", "some"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s17CustomReflectableP", "x"]
+- !private ["s23CustomStringConvertibleP", "callAsFunction"]
+- !private ["s23CustomStringConvertibleP", "closedLinePathWithPoints"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "delay"]
+- !private ["s23CustomStringConvertibleP", "easeIn"]
+- !private ["s23CustomStringConvertibleP", "easeOut"]
+- !private ["s23CustomStringConvertibleP", "fill"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "linePathWithPoints"]
+- !private ["s23CustomStringConvertibleP", "max"]
+- !private ["s23CustomStringConvertibleP", "min"]
+- !private ["s23CustomStringConvertibleP", "point"]
+- !private ["s23CustomStringConvertibleP", "quadClosedCurvedPathWithPoints"]
+- !private ["s23CustomStringConvertibleP", "quadCurvedPathWithPoints"]
+- !private ["s23CustomStringConvertibleP", "trim"]
+- !private ["s23CustomStringConvertibleP", "white"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "max"]
+- !private ["10Foundation12DataProtocolP", "min"]
+- !private ["Se", "count"]
+- !private ["Se", "easeIn"]
+- !private ["Se", "height"]
+- !private ["Se", "init"]
+- !private ["Se", "max"]
+- !private ["Se", "min"]
+- !private ["Se", "none"]
+- !private ["Se", "size"]
+- !private ["Se", "some"]
+- !private ["Se", "width"]
+- !private ["Se", "x"]
+- !private ["Sd", "init"]
+- !private ["7SwiftUI15DynamicPropertyP", "constant"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
+- ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
+- !private ["SE", "count"]
+- !private ["SE", "easeIn"]
+- !private ["SE", "height"]
+- !private ["SE", "init"]
+- !private ["SE", "max"]
+- !private ["SE", "min"]
+- !private ["SE", "none"]
+- !private ["SE", "size"]
+- !private ["SE", "some"]
+- !private ["SE", "width"]
+- !private ["SE", "x"]
+- !private ["SQ", "bottom"]
+- !private ["SQ", "callAsFunction"]
+- !private ["SQ", "center"]
+- !private ["SQ", "closedLinePathWithPoints"]
+- !private ["SQ", "count"]
+- !private ["SQ", "degrees"]
+- !private ["SQ", "delay"]
+- !private ["SQ", "easeIn"]
+- !private ["SQ", "easeOut"]
+- !private ["SQ", "fill"]
+- !private ["SQ", "height"]
+- !private ["SQ", "init"]
+- !private ["SQ", "leading"]
+- !private ["SQ", "linePathWithPoints"]
+- !private ["SQ", "local"]
+- !private ["SQ", "max"]
+- !private ["SQ", "min"]
+- !private ["SQ", "none"]
+- !private ["SQ", "point"]
+- !private ["SQ", "quadClosedCurvedPathWithPoints"]
+- !private ["SQ", "quadCurvedPathWithPoints"]
+- !private ["SQ", "round"]
+- !private ["SQ", "size"]
+- !private ["SQ", "some"]
+- !private ["SQ", "top"]
+- !private ["SQ", "trailing"]
+- !private ["SQ", "trim"]
+- !private ["SQ", "white"]
+- !private ["SQ", "width"]
+- !private ["SQ", "x"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "max"]
+- !private ["s25ExpressibleByArrayLiteralP", "min"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "easeIn"]
+- !private ["s23ExpressibleByNilLiteralP", "none"]
+- !private ["s23ExpressibleByNilLiteralP", "some"]
+- !private ["SF", "init"]
+- !private ["7SwiftUI13GeometryProxyV", "frame"]
+- !private ["7SwiftUI14GeometryReaderV", "frame"]
+- !private ["7SwiftUI14GeometryReaderV", "init"]
+- !private ["7SwiftUI7GestureP", "easeIn"]
+- !private ["7SwiftUI7GestureP", "none"]
+- !private ["7SwiftUI7GestureP", "some"]
+- !private ["7SwiftUI8GradientV", "init"]
+- !private ["13SwiftUICharts13GradientColorV", "getGradient"]
+- ["13SwiftUICharts13GradientColorV", "init"]
+- !private ["SH", "bottom"]
+- !private ["SH", "center"]
+- !private ["SH", "count"]
+- !private ["SH", "degrees"]
+- !private ["SH", "easeIn"]
+- !private ["SH", "init"]
+- !private ["SH", "leading"]
+- !private ["SH", "local"]
+- !private ["SH", "max"]
+- !private ["SH", "min"]
+- !private ["SH", "none"]
+- !private ["SH", "round"]
+- !private ["SH", "some"]
+- !private ["SH", "top"]
+- !private ["SH", "trailing"]
+- !private ["SH", "white"]
+- !private ["s12IdentifiableP", "init"]
+- !private ["s12IdentifiableP", "onlyPoints"]
+- !private ["s12IdentifiableP", "points"]
+- !private ["13SwiftUICharts14IndicatorPointV", "deinit"]
+- !private ["13SwiftUICharts14IndicatorPointV", "init"]
+- !private ["13SwiftUICharts14IndicatorPointV", "position"]
+- ["13SwiftUICharts4LineV", "$data"]
+- ["13SwiftUICharts4LineV", "$frame"]
+- ["13SwiftUICharts4LineV", "$maxDataValue"]
+- ["13SwiftUICharts4LineV", "$minDataValue"]
+- ["13SwiftUICharts4LineV", "$showBackground"]
+- !private ["13SwiftUICharts4LineV", "$showFull"]
+- ["13SwiftUICharts4LineV", "$showIndicator"]
+- ["13SwiftUICharts4LineV", "$touchLocation"]
+- !private ["13SwiftUICharts4LineV", "Animation"]
+- ["13SwiftUICharts4LineV", "Binding"]
+- ["13SwiftUICharts4LineV", "Body"]
+- ["13SwiftUICharts4LineV", "Bool"]
+- ["13SwiftUICharts4LineV", "CGFloat"]
+- ["13SwiftUICharts4LineV", "CGPoint"]
+- ["13SwiftUICharts4LineV", "CGRect"]
+- ["13SwiftUICharts4LineV", "ChartData"]
+- ["13SwiftUICharts4LineV", "Colors"]
+- ["13SwiftUICharts4LineV", "Double"]
+- !private ["13SwiftUICharts4LineV", "Gradient"]
+- ["13SwiftUICharts4LineV", "GradientColor"]
+- !private ["13SwiftUICharts4LineV", "IndicatorPoint"]
+- ["13SwiftUICharts4LineV", "Int"]
+- !private ["13SwiftUICharts4LineV", "LinearGradient"]
+- ["13SwiftUICharts4LineV", "ObservedObject"]
+- ["13SwiftUICharts4LineV", "Path"]
+- ["13SwiftUICharts4LineV", "State"]
+- !private ["13SwiftUICharts4LineV", "StrokeStyle"]
+- ["13SwiftUICharts4LineV", "View"]
+- !private ["13SwiftUICharts4LineV", "ZStack"]
+- ["13SwiftUICharts4LineV", "_Default_Body"]
+- !private ["13SwiftUICharts4LineV", "_data"]
+- !private ["13SwiftUICharts4LineV", "_frame"]
+- ["13SwiftUICharts4LineV", "_makeView"]
+- ["13SwiftUICharts4LineV", "_makeViewList"]
+- !private ["13SwiftUICharts4LineV", "_maxDataValue"]
+- !private ["13SwiftUICharts4LineV", "_minDataValue"]
+- !private ["13SwiftUICharts4LineV", "_showBackground"]
+- !private ["13SwiftUICharts4LineV", "_showFull"]
+- !private ["13SwiftUICharts4LineV", "_showIndicator"]
+- !private ["13SwiftUICharts4LineV", "_touchLocation"]
+- ["13SwiftUICharts4LineV", "body"]
+- ["13SwiftUICharts4LineV", "closedPath"]
+- ["13SwiftUICharts4LineV", "curvedLines"]
+- ["13SwiftUICharts4LineV", "data"]
+- ["13SwiftUICharts4LineV", "deinit"]
+- ["13SwiftUICharts4LineV", "frame"]
+- ["13SwiftUICharts4LineV", "getClosestPointOnPath"]
+- ["13SwiftUICharts4LineV", "gradient"]
+- ["13SwiftUICharts4LineV", "index"]
+- ["13SwiftUICharts4LineV", "init"]
+- ["13SwiftUICharts4LineV", "maxDataValue"]
+- ["13SwiftUICharts4LineV", "minDataValue"]
+- ["13SwiftUICharts4LineV", "padding"]
+- ["13SwiftUICharts4LineV", "path"]
+- !private ["13SwiftUICharts4LineV", "print"]
+- ["13SwiftUICharts4LineV", "showBackground"]
+- !private ["13SwiftUICharts4LineV", "showFull"]
+- ["13SwiftUICharts4LineV", "showIndicator"]
+- ["13SwiftUICharts4LineV", "stepHeight"]
+- ["13SwiftUICharts4LineV", "stepWidth"]
+- ["13SwiftUICharts4LineV", "touchLocation"]
+- !private ["13SwiftUICharts13Line_PreviewsV", "CGPoint"]
+- !private ["13SwiftUICharts13Line_PreviewsV", "ChartData"]
+- !private ["13SwiftUICharts13Line_PreviewsV", "GeometryReader"]
+- !private ["13SwiftUICharts13Line_PreviewsV", "Line"]
+- ["13SwiftUICharts13Line_PreviewsV", "Previews"]
+- ["13SwiftUICharts13Line_PreviewsV", "View"]
+- ["13SwiftUICharts13Line_PreviewsV", "_Default_Previews"]
+- ["13SwiftUICharts13Line_PreviewsV", "_platform"]
+- ["13SwiftUICharts13Line_PreviewsV", "_previews"]
+- ["13SwiftUICharts13Line_PreviewsV", "deinit"]
+- ["13SwiftUICharts13Line_PreviewsV", "init"]
+- ["13SwiftUICharts13Line_PreviewsV", "platform"]
+- ["13SwiftUICharts13Line_PreviewsV", "previews"]
+- !private ["7SwiftUI14LinearGradientV", "init"]
+- !private ["s25LosslessStringConvertibleP", "closedLinePathWithPoints"]
+- !private ["s25LosslessStringConvertibleP", "fill"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "linePathWithPoints"]
+- !private ["s25LosslessStringConvertibleP", "point"]
+- !private ["s25LosslessStringConvertibleP", "quadClosedCurvedPathWithPoints"]
+- !private ["s25LosslessStringConvertibleP", "quadCurvedPathWithPoints"]
+- !private ["s25LosslessStringConvertibleP", "trim"]
+- !private ["SM", "count"]
+- !private ["SM", "max"]
+- !private ["SM", "min"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "max"]
+- !private ["10Foundation19MutableDataProtocolP", "min"]
+- !private ["Sj", "init"]
+- !private ["7Combine16ObservableObjectP", "init"]
+- !private ["7Combine16ObservableObjectP", "onlyPoints"]
+- !private ["7Combine16ObservableObjectP", "points"]
+- ["7SwiftUI14ObservedObjectV", "init"]
+- !private ["Sq", "easeIn"]
+- !private ["Sq", "none"]
+- !private ["Sq", "some"]
+- !private ["7SwiftUI4PathV", "closedLinePathWithPoints"]
+- !private ["7SwiftUI4PathV", "fill"]
+- !private ["7SwiftUI4PathV", "linePathWithPoints"]
+- !private ["7SwiftUI4PathV", "point"]
+- !private ["7SwiftUI4PathV", "quadClosedCurvedPathWithPoints"]
+- !private ["7SwiftUI4PathV", "quadCurvedPathWithPoints"]
+- !private ["7SwiftUI4PathV", "trim"]
+- !private ["7SwiftUI15PreviewProviderP", "CGPoint"]
+- !private ["7SwiftUI15PreviewProviderP", "ChartData"]
+- !private ["7SwiftUI15PreviewProviderP", "GeometryReader"]
+- !private ["7SwiftUI15PreviewProviderP", "Line"]
+- ["7SwiftUI15PreviewProviderP", "Previews"]
+- ["7SwiftUI15PreviewProviderP", ""]
+- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI15PreviewProviderP", "_platform"]
+- ["7SwiftUI15PreviewProviderP", "_previews"]
+- ["7SwiftUI15PreviewProviderP", "platform"]
+- ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["Sk", "count"]
+- !private ["Sk", "max"]
+- !private ["Sk", "min"]
+- !private ["Sm", "count"]
+- !private ["Sm", "max"]
+- !private ["Sm", "min"]
+- !private ["SY", "round"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["ST", "count"]
+- !private ["ST", "max"]
+- !private ["ST", "min"]
+- !private ["7SwiftUI5ShapeP", "closedLinePathWithPoints"]
+- !private ["7SwiftUI5ShapeP", "fill"]
+- !private ["7SwiftUI5ShapeP", "linePathWithPoints"]
+- !private ["7SwiftUI5ShapeP", "point"]
+- !private ["7SwiftUI5ShapeP", "quadClosedCurvedPathWithPoints"]
+- !private ["7SwiftUI5ShapeP", "quadCurvedPathWithPoints"]
+- !private ["7SwiftUI5ShapeP", "stroke"]
+- !private ["7SwiftUI5ShapeP", "trim"]
+- !private ["7SwiftUI10ShapeStyleP", "init"]
+- !private ["7SwiftUI10ShapeStyleP", "white"]
+- !private ["s13SignedNumericP", "init"]
+- ["7SwiftUI5StateV", "init"]
+- ["7SwiftUI5StateV", "wrappedValue"]
+- !private ["Sx", "init"]
+- !private ["7SwiftUI11StrokeStyleV", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["7SwiftUI9UnitPointV", "bottom"]
+- !private ["7SwiftUI9UnitPointV", "center"]
+- !private ["7SwiftUI9UnitPointV", "leading"]
+- !private ["7SwiftUI9UnitPointV", "top"]
+- !private ["7SwiftUI9UnitPointV", "trailing"]
+- !private ["7SwiftUI16VectorArithmeticP", "init"]
+- !private ["7SwiftUI4ViewP", "Animation"]
+- ["7SwiftUI4ViewP", "Binding"]
+- ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "CGFloat"]
+- !private ["7SwiftUI4ViewP", "CGPoint"]
+- ["7SwiftUI4ViewP", "Colors"]
+- !private ["7SwiftUI4ViewP", "Double"]
+- !private ["7SwiftUI4ViewP", "Gradient"]
+- ["7SwiftUI4ViewP", "GradientColor"]
+- !private ["7SwiftUI4ViewP", "IndicatorPoint"]
+- !private ["7SwiftUI4ViewP", "LinearGradient"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
+- !private ["7SwiftUI4ViewP", "Path"]
+- ["7SwiftUI4ViewP", "State"]
+- !private ["7SwiftUI4ViewP", "StrokeStyle"]
+- !private ["7SwiftUI4ViewP", "ZStack"]
+- ["7SwiftUI4ViewP", ""]
+- ["7SwiftUI4ViewP", "_Default_Body"]
+- ["7SwiftUI4ViewP", "_makeView"]
+- ["7SwiftUI4ViewP", "_makeViewList"]
+- !private ["7SwiftUI4ViewP", "animation"]
+- ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "closedLinePathWithPoints"]
+- !private ["7SwiftUI4ViewP", "closedPath"]
+- !private ["7SwiftUI4ViewP", "curvedLines"]
+- !private ["7SwiftUI4ViewP", "data"]
+- !private ["7SwiftUI4ViewP", "drawingGroup"]
+- !private ["7SwiftUI4ViewP", "easeIn"]
+- !private ["7SwiftUI4ViewP", "fill"]
+- !private ["7SwiftUI4ViewP", "frame"]
+- !private ["7SwiftUI4ViewP", "getClosestPointOnPath"]
+- !private ["7SwiftUI4ViewP", "gradient"]
+- !private ["7SwiftUI4ViewP", "index"]
+- !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "linePathWithPoints"]
+- !private ["7SwiftUI4ViewP", "maxDataValue"]
+- !private ["7SwiftUI4ViewP", "minDataValue"]
+- !private ["7SwiftUI4ViewP", "none"]
+- !private ["7SwiftUI4ViewP", "onAppear"]
+- !private ["7SwiftUI4ViewP", "onDisappear"]
+- !private ["7SwiftUI4ViewP", "padding"]
+- !private ["7SwiftUI4ViewP", "path"]
+- !private ["7SwiftUI4ViewP", "point"]
+- !private ["7SwiftUI4ViewP", "position"]
+- !private ["7SwiftUI4ViewP", "print"]
+- !private ["7SwiftUI4ViewP", "quadClosedCurvedPathWithPoints"]
+- !private ["7SwiftUI4ViewP", "quadCurvedPathWithPoints"]
+- !private ["7SwiftUI4ViewP", "rotation3DEffect"]
+- !private ["7SwiftUI4ViewP", "rotationEffect"]
+- !private ["7SwiftUI4ViewP", "showBackground"]
+- !private ["7SwiftUI4ViewP", "showFull"]
+- !private ["7SwiftUI4ViewP", "showIndicator"]
+- !private ["7SwiftUI4ViewP", "some"]
+- !private ["7SwiftUI4ViewP", "stepHeight"]
+- !private ["7SwiftUI4ViewP", "stepWidth"]
+- !private ["7SwiftUI4ViewP", "stroke"]
+- !private ["7SwiftUI4ViewP", "touchLocation"]
+- !private ["7SwiftUI4ViewP", "transition"]
+- !private ["7SwiftUI4ViewP", "trim"]
+- !private ["7SwiftUI4ViewP", "white"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["7SwiftUI11ViewBuilderV", "buildIf"]
+- !private ["7SwiftUI6ZStackV", "init"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "max"]
+- !private ["s14_ArrayProtocolP", "min"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "height"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "size"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "width"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "x"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "max"]
+- !private ["s24_DestructorSafeContainerP", "min"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["7SwiftUI18_FormatSpecifiableP", "init"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "max"]
+- !private ["s19_HasContiguousBytesP", "min"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "max"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "min"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "easeIn"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "max"]
+- !private ["s21_ObjectiveCBridgeableP", "min"]
+- !private ["s21_ObjectiveCBridgeableP", "none"]
+- !private ["s21_ObjectiveCBridgeableP", "size"]
+- !private ["s21_ObjectiveCBridgeableP", "some"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s21_ObjectiveCBridgeableP", "x"]
+- !private ["7SwiftUI16_PreviewProviderP", "CGPoint"]
+- !private ["7SwiftUI16_PreviewProviderP", "ChartData"]
+- !private ["7SwiftUI16_PreviewProviderP", "GeometryReader"]
+- !private ["7SwiftUI16_PreviewProviderP", "Line"]
+- ["7SwiftUI16_PreviewProviderP", "Previews"]
+- ["7SwiftUI16_PreviewProviderP", ""]
+- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI16_PreviewProviderP", "_platform"]
+- ["7SwiftUI16_PreviewProviderP", "_previews"]
+- ["7SwiftUI16_PreviewProviderP", "platform"]
+- ["7SwiftUI16_PreviewProviderP", "previews"]
+- !private ["7SwiftUI11_VectorMathP", "degrees"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "7SwiftUI5AngleV"
+- !private "7SwiftUI10AnimatableP"
+- !private "7SwiftUI9AnimationV"
+- !private "7SwiftUI13AnyTransitionV"
+- !private "Sa"
+- !private "SK"
+- !private "SB"
+- !private "7SwiftUI7BindingV"
+- !private "12CoreGraphics7CGFloatV"
+- !private "So10CGLineJoinV"
+- !private "So7CGPointV"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
+- !private "s7CVarArgP"
+- "13SwiftUICharts9ChartDataC"
+- !private "Sl"
+- !private "7SwiftUI5ColorV"
+- "13SwiftUICharts6ColorsV"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- !private "7SwiftUI15CoordinateSpaceO"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "Sd"
+- "7SwiftUI15DynamicPropertyP"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "SF"
+- !private "7SwiftUI13GeometryProxyV"
+- !private "7SwiftUI14GeometryReaderV"
+- !private "7SwiftUI7GestureP"
+- !private "7SwiftUI8GradientV"
+- "13SwiftUICharts13GradientColorV"
+- !private "SH"
+- !private "s12IdentifiableP"
+- !private "13SwiftUICharts14IndicatorPointV"
+- "13SwiftUICharts4LineV"
+- "13SwiftUICharts13Line_PreviewsV"
+- !private "7SwiftUI14LinearGradientV"
+- !private "s25LosslessStringConvertibleP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "Sj"
+- !private "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
+- !private "Sq"
+- !private "7SwiftUI4PathV"
+- "7SwiftUI15PreviewProviderP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "s10SIMDScalarP"
+- !private "ST"
+- !private "7SwiftUI5ShapeP"
+- !private "7SwiftUI10ShapeStyleP"
+- !private "s13SignedNumericP"
+- "7SwiftUI5StateV"
+- !private "Sx"
+- !private "7SwiftUI11StrokeStyleV"
+- !private "s20TextOutputStreamableP"
+- !private "7SwiftUI9UnitPointV"
+- !private "7SwiftUI16VectorArithmeticP"
+- "7SwiftUI4ViewP"
+- !private "7SwiftUI11ViewBuilderV"
+- !private "7SwiftUI6ZStackV"
+- !private "s14_ArrayProtocolP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "7SwiftUI18_FormatSpecifiableP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+- "7SwiftUI16_PreviewProviderP"
+- !private "7SwiftUI11_VectorMathP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "c03e06be24cdf501cb0ba6a7c3c37d3b"

@@ -1,0 +1,4 @@
+module SwiftUICharts {
+header "SwiftUICharts-Swift.h"
+export *
+}
