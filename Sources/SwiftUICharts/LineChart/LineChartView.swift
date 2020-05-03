@@ -127,7 +127,7 @@ public struct LineChartView: View {
                 .onChanged({ value in
                     self.touchLocation = value.location
                     self.showIndicatorDot = true
-                    self.getClosestDataPoint(toPoint: value.location, width:self.frame.width, height: self.frame.height)
+                    self.getClosestDataPoint(toPoint: value.location, width:self.frame.width, height: self.frame.height, eye: false)
                 })
                     .onEnded({ value in
                         self.showIndicatorDot = false
@@ -181,7 +181,7 @@ public struct LineChartView: View {
                 .onChanged({ value in
                     self.touchLocation = value.location
                     self.showHeadIndicatorDot = true
-                    self.getClosestDataPoint(toPoint: value.location, width:self.frame.width, height: self.frame.height)
+                    self.getClosestDataPoint(toPoint: value.location, width:self.frame.width, height: self.frame.height, eye: false)
                 })
                     .onEnded({ value in
                         self.showHeadIndicatorDot = false
