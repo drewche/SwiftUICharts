@@ -24,9 +24,18 @@ public struct LineChartView: View {
     
     @State private var touchLocation:CGPoint = .zero
     @State private var showIndicatorDot: Bool = false
+    @State private var showHeadIndicatorDot: Bool = false
     @State private var currentValue: Double = 2 {
         didSet{
             if (oldValue != self.currentValue && showIndicatorDot) {
+                HapticFeedback.playSelection()
+            }
+            
+        }
+    }
+    @State private var currentHeadValue: Double = 2 {
+        didSet{
+            if (oldValue != self.currentHeadValue && showHeadIndicatorDot) {
                 HapticFeedback.playSelection()
             }
             
@@ -66,7 +75,7 @@ public struct LineChartView: View {
                 .shadow(color: self.style.dropShadowColor, radius: self.dropShadow ? 8 : 0)
             VStack(alignment: .center) {
                 // EYE DATA
-                VStack(alignment: .leading){
+                VStack(alignment: .leading, spacing: 0){
                     if(!self.showIndicatorDot){
                         VStack(alignment: .leading, spacing: 8){
                             Text(self.title)
@@ -110,10 +119,10 @@ public struct LineChartView: View {
                             maxDataValue: .constant(nil)
                         )
                     }
-                    .frame(width: frame.width, height: frame.height + 30)
+                    .frame(width: frame.width, height: frame.height)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .offset(x: 0, y: 0)
-                }.frame(width: self.frame.width, height: self.frame.height)
+                }.frame(width: self.frame.width - 20, height: self.frame.height)
                 .gesture(DragGesture()
                 .onChanged({ value in
                     self.touchLocation = value.location
@@ -127,7 +136,7 @@ public struct LineChartView: View {
                 
                 // HEAD DATA
                 VStack(alignment: .leading){
-                    if(!self.showIndicatorDot){
+                    if(!self.showHeadIndicatorDot){
 //                        VStack(alignment: .leading, spacing: 8){
 //                            Text(self.title)
 //                                .font(.title)
@@ -145,7 +154,7 @@ public struct LineChartView: View {
                     }else{
                         HStack{
                             Spacer()
-                            Text("\(self.currentValue, specifier: self.valueSpecifier)")
+                            Text("\(self.currentHeadValue, specifier: self.valueSpecifier)")
                                 .font(.system(size: 41, weight: .bold, design: .default))
                                 .offset(x: 0, y: 30)
                             Spacer()
@@ -157,23 +166,25 @@ public struct LineChartView: View {
                         Line(data: self.headData,
                             frame: .constant(geometry.frame(in: .local)),
                             touchLocation: self.$touchLocation,
-                            showIndicator: self.$showIndicatorDot,
+                            showIndicator: self.$showHeadIndicatorDot,
                             minDataValue: .constant(nil),
                             maxDataValue: .constant(nil)
                         )
                     }
-                    .frame(width: frame.width, height: frame.height + 30)
+                    .frame(width: frame.width - 20, height: frame.height)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .offset(x: 0, y: 0)
                 }.frame(width: self.frame.width, height: self.frame.height)
+                .rotationEffect(.degrees(180))
+                .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
                 .gesture(DragGesture()
                 .onChanged({ value in
                     self.touchLocation = value.location
-                    self.showIndicatorDot = true
+                    self.showHeadIndicatorDot = true
                     self.getClosestDataPoint(toPoint: value.location, width:self.frame.width, height: self.frame.height)
                 })
                     .onEnded({ value in
-                        self.showIndicatorDot = false
+                        self.showHeadIndicatorDot = false
                     })
                 )
             }
@@ -181,14 +192,24 @@ public struct LineChartView: View {
         
     }
     
-    @discardableResult func getClosestDataPoint(toPoint: CGPoint, width:CGFloat, height: CGFloat) -> CGPoint {
-        let points = self.data.onlyPoints()
+    @discardableResult func getClosestDataPoint(toPoint: CGPoint, width:CGFloat, height: CGFloat, eye: Bool) -> CGPoint {
+        if (eye) {
+            let points = self.data.onlyPoints()
+        } else {
+            let points = self.headData.onlyPoints()
+        }
+        
         let stepWidth: CGFloat = width / CGFloat(points.count-1)
         let stepHeight: CGFloat = height / CGFloat(points.max()! + points.min()!)
         
         let index:Int = Int(round((toPoint.x)/stepWidth))
         if (index >= 0 && index < points.count){
-            self.currentValue = points[index]
+            if (eye) {
+                self.currentValue = points[index]
+            } else {
+                self.currentHeadValue = points[index]
+            }
+                
             return CGPoint(x: CGFloat(index)*stepWidth, y: CGFloat(points[index])*stepHeight)
         }
         return .zero
@@ -198,7 +219,7 @@ public struct LineChartView: View {
 struct WidgetView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LineChartView(data: [8,23,54,32,12,37,7,23,43], headData: [-8,-23,-54,-32,-12,-37,-7,-23,-43], title: "Line chart", legend: "Basic")
+            LineChartView(data: [8,23,54,32,12,37,7,23,43], headData: [8,23,54,32,12,37,7,23,43], title: "Line chart", legend: "Basic")
                 .environment(\.colorScheme, .light)
         }
     }
