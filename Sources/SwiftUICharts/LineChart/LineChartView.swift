@@ -35,6 +35,7 @@ public struct LineChartView: View {
     private var rateValue: Int
     
     public init(data: [Double],
+                headData: [Double],
                 title: String,
                 legend: String? = nil,
                 style: ChartStyle = Styles.lineChartStyleOne,
