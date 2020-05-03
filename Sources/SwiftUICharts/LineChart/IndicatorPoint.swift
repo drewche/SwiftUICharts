@@ -1,9 +1,9 @@
 //
 //  IndicatorPoint.swift
-//  LineChart
+//  ChartTest
 //
-//  Created by András Samu on 2019. 09. 03..
-//  Copyright © 2019. András Samu. All rights reserved.
+//  Created by Andrew Che on 5/2/20.
+//  Copyright © 2020 Andrew Che. All rights reserved.
 //
 
 import SwiftUI

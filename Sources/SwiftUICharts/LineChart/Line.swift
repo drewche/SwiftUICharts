@@ -1,9 +1,9 @@
 //
 //  Line.swift
-//  LineChart
+//  ChartTest
 //
-//  Created by András Samu on 2019. 08. 30..
-//  Copyright © 2019. András Samu. All rights reserved.
+//  Created by Andrew Che on 5/2/20.
+//  Copyright © 2020 Andrew Che. All rights reserved.
 //
 
 import SwiftUI
@@ -13,13 +13,14 @@ public struct Line: View {
     @Binding var frame: CGRect
     @Binding var touchLocation: CGPoint
     @Binding var showIndicator: Bool
+    var flip: Bool
     @Binding var minDataValue: Double?
     @Binding var maxDataValue: Double?
     @State private var showFull: Bool = false
     @State var showBackground: Bool = true
     var gradient: GradientColor = GradientColor(start: Colors.GradientPurple, end: Colors.GradientNeonBlue)
     var index:Int = 0
-    let padding:CGFloat = 30
+    let padding:CGFloat = 0
     var curvedLines: Bool = true
     var stepWidth: CGFloat {
         if data.points.count < 2 {
@@ -34,7 +35,6 @@ public struct Line: View {
         if minDataValue != nil && maxDataValue != nil {
             min = minDataValue!
             max = maxDataValue!
-            print(min,max)
         }else if let minPoint = points.min(), let maxPoint = points.max(), minPoint != maxPoint {
             min = minPoint
             max = maxPoint
@@ -64,16 +64,16 @@ public struct Line: View {
             if(self.showFull && self.showBackground){
                 self.closedPath
                     .fill(LinearGradient(gradient: Gradient(colors: [Colors.GradientUpperBlue, .white]), startPoint: .bottom, endPoint: .top))
-                    .rotationEffect(.degrees(180), anchor: .center)
-                    .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                    .rotationEffect(.degrees(self.flip ? 0 : 180), anchor: .center)
+                    .rotation3DEffect(.degrees(self.flip ? 0 : 180), axis: (x: 0, y: 1, z: 0))
                     .transition(.opacity)
                     .animation(.easeIn(duration: 1.6))
             }
             self.path
                 .trim(from: 0, to: self.showFull ? 1:0)
                 .stroke(LinearGradient(gradient: gradient.getGradient(), startPoint: .leading, endPoint: .trailing) ,style: StrokeStyle(lineWidth: 3, lineJoin: .round))
-                .rotationEffect(.degrees(180), anchor: .center)
-                .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                .rotationEffect(.degrees(self.flip ? 0 : 180), anchor: .center)
+                .rotation3DEffect(.degrees(self.flip ? 0 : 180), axis: (x: 0, y: 1, z: 0))
                 .animation(Animation.easeOut(duration: 1.2).delay(Double(self.index)*0.4))
                 .onAppear {
                     self.showFull = true
@@ -85,8 +85,8 @@ public struct Line: View {
             if(self.showIndicator) {
                 IndicatorPoint()
                     .position(self.getClosestPointOnPath(touchLocation: self.touchLocation))
-                    .rotationEffect(.degrees(180), anchor: .center)
-                    .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                    .rotationEffect(.degrees(self.flip ? 0 : 180), anchor: .center)
+                    .rotation3DEffect(.degrees(self.flip ? 0 : 180), axis: (x: 0, y: 1, z: 0))
             }
         }
     }
@@ -101,7 +101,7 @@ public struct Line: View {
 struct Line_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader{ geometry in
-            Line(data: ChartData(points: [12,-230,10,54]), frame: .constant(geometry.frame(in: .local)), touchLocation: .constant(CGPoint(x: 100, y: 12)), showIndicator: .constant(true), minDataValue: .constant(nil), maxDataValue: .constant(nil))
+            Line(data: ChartData(points: [12,-230,10,54]), frame: .constant(geometry.frame(in: .local)), touchLocation: .constant(CGPoint(x: 100, y: 12)), showIndicator: .constant(true), flip: false, minDataValue: .constant(nil), maxDataValue: .constant(nil))
         }.frame(width: 320, height: 160)
     }
 }

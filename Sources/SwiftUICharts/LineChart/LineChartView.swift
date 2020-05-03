@@ -1,9 +1,9 @@
 //
-//  LineCard.swift
-//  LineChart
+//  LineChartView.swift
+//  ChartTest
 //
-//  Created by András Samu on 2019. 08. 31..
-//  Copyright © 2019. András Samu. All rights reserved.
+//  Created by Andrew Che on 5/2/20.
+//  Copyright © 2020 Andrew Che. All rights reserved.
 //
 
 import SwiftUI
@@ -71,125 +71,150 @@ public struct LineChartView: View {
         ZStack(alignment: .center){
             RoundedRectangle(cornerRadius: 20)
                 .fill(self.colorScheme == .dark ? self.darkModeStyle.backgroundColor : self.style.backgroundColor)
-                .frame(width: frame.width, height: frame.height * 2, alignment: .center)
                 .shadow(color: self.style.dropShadowColor, radius: self.dropShadow ? 8 : 0)
-            VStack(alignment: .center) {
-                // EYE DATA
-                VStack(alignment: .leading, spacing: 0){
-                    if(!self.showIndicatorDot){
-                        VStack(alignment: .leading, spacing: 8){
-                            Text(self.title)
-                                .font(.title)
-                                .bold()
-                                .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.textColor : self.style.textColor)
-                            if (self.legend != nil){
-                                Text(self.legend!)
-                                    .font(.callout)
-                                    .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.legendTextColor :self.style.legendTextColor)
-                            }
-//                            HStack {
-//                                if (self.rateValue >= 0){
-//                                    Image(systemName: "arrow.up")
-//                                }else{
-//                                    Image(systemName: "arrow.down")
-//                                }
-//                                Text("\(self.rateValue)%")
-//                            }
+            VStack {
+                HStack {
+                    if(!self.showIndicatorDot && !self.showHeadIndicatorDot){
+                    VStack(alignment: .leading, spacing: 4){
+//                        Text(self.title)
+//                            .font(.title)
+//                            .bold()
+//                            .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.textColor : self.style.textColor)
+                        if (self.legend != nil){
+                            Text(self.legend!)
+                                .font(.callout)
+                                .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.legendTextColor :self.style.legendTextColor)
                         }
-                        .transition(.opacity)
-                        .animation(.easeIn(duration: 0.1))
-                        .padding([.leading, .top])
-                    }else{
-                        HStack{
-                            Spacer()
-                            Text("\(self.currentValue, specifier: self.valueSpecifier)")
-                                .font(.system(size: 41, weight: .bold, design: .default))
-                                .offset(x: 0, y: 30)
-                            Spacer()
-                        }
-                        .transition(.scale)
+                    }
+                    .transition(.opacity)
+                    .animation(.easeIn(duration: 0.1))
+                    .padding(.leading)
+                    .padding(.top, 10)
+                    } else {
+                        EmptyView()
                     }
                     Spacer()
-                    GeometryReader{ geometry in
-                        Line(data: self.data,
-                            frame: .constant(geometry.frame(in: .local)),
-                            touchLocation: self.$touchLocation,
-                            showIndicator: self.$showIndicatorDot,
-                            minDataValue: .constant(nil),
-                            maxDataValue: .constant(nil)
-                        )
-                    }
-                    .frame(width: frame.width, height: frame.height)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .offset(x: 0, y: 0)
-                }.frame(width: self.frame.width - 20, height: self.frame.height)
-                .gesture(DragGesture()
-                .onChanged({ value in
-                    self.touchLocation = value.location
-                    self.showIndicatorDot = true
-                    self.getClosestDataPoint(toPoint: value.location, width:self.frame.width, height: self.frame.height, eye: false)
-                })
-                    .onEnded({ value in
-                        self.showIndicatorDot = false
-                    })
-                )
-                
-                // HEAD DATA
-                VStack(alignment: .leading){
-                    if(!self.showHeadIndicatorDot){
-//                        VStack(alignment: .leading, spacing: 8){
-//                            Text(self.title)
-//                                .font(.title)
-//                                .bold()
-//                                .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.textColor : self.style.textColor)
-//                            if (self.legend != nil){
-//                                Text(self.legend!)
-//                                    .font(.callout)
-//                                    .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.legendTextColor :self.style.legendTextColor)
-//                            }
-//                        }
-//                        .transition(.opacity)
-//                        .animation(.easeIn(duration: 0.1))
-//                        .padding([.leading, .top])
-                    }else{
-                        HStack{
-                            Spacer()
-                            Text("\(self.currentHeadValue, specifier: self.valueSpecifier)")
-                                .font(.system(size: 41, weight: .bold, design: .default))
-                                .offset(x: 0, y: 30)
-                            Spacer()
-                        }
-                        .transition(.scale)
-                    }
-                    Spacer()
-                    GeometryReader{ geometry in
-                        Line(data: self.headData,
-                            frame: .constant(geometry.frame(in: .local)),
-                            touchLocation: self.$touchLocation,
-                            showIndicator: self.$showHeadIndicatorDot,
-                            minDataValue: .constant(nil),
-                            maxDataValue: .constant(nil)
-                        )
-                    }
-                    .frame(width: frame.width - 20, height: frame.height)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .offset(x: 0, y: 0)
-                }.frame(width: self.frame.width, height: self.frame.height)
-                .rotationEffect(.degrees(180))
-                .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
-                .gesture(DragGesture()
-                .onChanged({ value in
-                    self.touchLocation = value.location
-                    self.showHeadIndicatorDot = true
-                    self.getClosestDataPoint(toPoint: value.location, width:self.frame.width, height: self.frame.height, eye: false)
-                })
-                    .onEnded({ value in
-                        self.showHeadIndicatorDot = false
-                    })
-                )
+                }
+                Spacer()
             }
+
+            VStack(alignment: .center, spacing: 0) {
+                // EYE DATA
+                HStack {
+                    Spacer()
+                    VStack(alignment: .leading, spacing: 0) {
+                        ZStack {
+                            if (self.showIndicatorDot) {
+                                HStack{
+                                    Spacer()
+                                    Text("\(self.currentValue, specifier: self.valueSpecifier)")
+                                        .font(.system(size: 41, weight: .bold, design: .default))
+                                        .offset(x: 0, y: 0)
+                                    Spacer()
+                                }
+                                .transition(.scale)
+                            }
+                            GeometryReader{ geometry in
+                                Line(data: self.data,
+                                    frame: .constant(geometry.frame(in: .local)),
+                                    touchLocation: self.$touchLocation,
+                                    showIndicator: self.$showIndicatorDot,
+                                    flip: false,
+                                    minDataValue: .constant(0),
+                                    maxDataValue: .constant(70),
+                                    showBackground: false,
+                                    gradient: GradientColors.orange
+                                )
+                            }
+                            .frame(width: frame.width - 30, height: frame.height)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                            .offset(x: 0, y: 0)
+                        
+                        }
+                    }.frame(width: self.frame.width - 30, height: self.frame.height)
+                    .gesture(DragGesture()
+                    .onChanged({ value in
+                        self.touchLocation = value.location
+                        self.showIndicatorDot = true
+                        self.getClosestDataPoint(toPoint: value.location, width:self.frame.width, height: self.frame.height, eye: true)
+                    })
+                        .onEnded({ value in
+                            self.showIndicatorDot = false
+                        })
+                    )
+                }
+                Divider()
+                    .padding(.leading, 25)
+                // HEAD DATA
+                HStack {
+                    Spacer()
+                    VStack(alignment: .leading){
+                        ZStack {
+                            if(self.showHeadIndicatorDot){
+                                HStack{
+                                    Spacer()
+                                    Text("\(self.currentHeadValue, specifier: self.valueSpecifier)")
+                                        .font(.system(size: 41, weight: .bold, design: .default))
+                                        .offset(x: 0, y: 0)
+                                    Spacer()
+                                }
+                                .transition(.scale)
+                            }
+                            GeometryReader{ geometry in
+                                Line(data: self.headData,
+                                    frame: .constant(geometry.frame(in: .local)),
+                                    touchLocation: self.$touchLocation,
+                                    showIndicator: self.$showHeadIndicatorDot,
+                                    flip: false,
+                                    minDataValue: .constant(-70),
+                                    maxDataValue: .constant(0),
+                                    showBackground: false
+                                )
+                            }
+                            .frame(width: frame.width - 30, height: frame.height)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                            .offset(x: 0, y: 0)
+                        }
+                    }.frame(width: self.frame.width - 30, height: self.frame.height)
+                    .gesture(DragGesture()
+                    .onChanged({ value in
+                        self.touchLocation = value.location
+                        self.showHeadIndicatorDot = true
+                        self.getClosestDataPoint(toPoint: value.location, width:self.frame.width, height: self.frame.height, eye: false)
+                    })
+                        .onEnded({ value in
+                            self.showHeadIndicatorDot = false
+                        })
+                    )
+                }
+                
+            }
+            // AXES LABELS
+            VStack {
+                Spacer()
+                Divider()
+                    .padding(.leading, 25)
+                    .padding(.bottom, 3)
+                Text("Time (s)")
+                    .font(.system(size: 11, weight: .bold, design: .default))
+                    .foregroundColor(self.colorScheme == .dark ?  self.darkModeStyle.legendTextColor :self.style.legendTextColor)
+                    .offset(y: -5)
+            }
+            HStack {
+                Text("Velocity (°/s)")
+                    .font(.system(size: 11, weight: .bold, design: .default))
+                    .foregroundColor(self.colorScheme == .dark ?          self.darkModeStyle.legendTextColor :self.style.legendTextColor)
+                    .rotationEffect(.degrees(-90))
+                    .offset(x: -25)
+                Divider()
+                    .offset(x: -60)
+                    .padding(.bottom, 25)
+                    .padding(.top, 35)
+                Spacer()
+            }
+
         }
-        
+        .frame(width: frame.width, height: frame.height * 2, alignment: .center)
     }
     
     @discardableResult func getClosestDataPoint(toPoint: CGPoint, width:CGFloat, height: CGFloat, eye: Bool) -> CGPoint {
@@ -220,7 +245,7 @@ public struct LineChartView: View {
 struct WidgetView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LineChartView(data: [8,23,54,32,12,37,7,23,43], headData: [8,23,54,32,12,37,7,23,43], title: "Line chart", legend: "Basic")
+            LineChartView(data: [8,23,54,32,12,37,7,23,43], headData: [-8,-23,-54,-32,-12,-37,-7,-23,-43], title: "Line chart", legend: "Basic")
                 .environment(\.colorScheme, .light)
         }
     }

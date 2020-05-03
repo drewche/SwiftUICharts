@@ -1,9 +1,9 @@
 //
 //  LineView.swift
-//  LineChart
+//  ChartTest
 //
-//  Created by András Samu on 2019. 09. 02..
-//  Copyright © 2019. András Samu. All rights reserved.
+//  Created by Andrew Che on 5/2/20.
+//  Copyright © 2020 Andrew Che. All rights reserved.
 //
 
 import SwiftUI
@@ -68,9 +68,9 @@ public struct LineView: View {
                              frame: .constant(CGRect(x: 0, y: 0, width: reader.frame(in: .local).width - 30, height: reader.frame(in: .local).height)),
                              touchLocation: self.$indicatorLocation,
                              showIndicator: self.$hideHorizontalLines,
+                             flip: false,
                              minDataValue: .constant(nil),
-                             maxDataValue: .constant(nil),
-                             showBackground: false
+                             maxDataValue: .constant(nil)
                         )
                         .offset(x: 30, y: 0)
                         .onAppear(){
@@ -123,4 +123,5 @@ struct LineView_Previews: PreviewProvider {
         LineView(data: [8,23,54,32,12,37,7,23,43], title: "Full chart", style: Styles.lineChartStyleOne)
     }
 }
+
 

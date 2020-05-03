@@ -1,8 +1,9 @@
 //
-//  File.swift
-//  
+//  Path+QuadCurve.swift
+//  ChartTest
 //
-//  Created by xspyhack on 2020/1/21.
+//  Created by Andrew Che on 5/2/20.
+//  Copyright © 2020 Andrew Che. All rights reserved.
 //
 
 import SwiftUI
@@ -350,4 +351,5 @@ extension CGPoint {
         return controlPoint
     }
 }
+
 

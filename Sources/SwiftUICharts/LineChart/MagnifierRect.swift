@@ -1,8 +1,9 @@
 //
 //  MagnifierRect.swift
-//  
+//  ChartTest
 //
-//  Created by Samu András on 2020. 03. 04..
+//  Created by Andrew Che on 5/2/20.
+//  Copyright © 2020 Andrew Che. All rights reserved.
 //
 
 import SwiftUI
@@ -31,3 +32,4 @@ public struct MagnifierRect: View {
         }
     }
 }
+
