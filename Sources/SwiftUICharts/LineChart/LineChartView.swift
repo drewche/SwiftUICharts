@@ -46,6 +46,8 @@ public struct LineChartView: View {
     public init(data: [Double],
                 headData: [Double],
                 title: String,
+                xaxis: String,
+                yaxis: String,
                 legend: String? = nil,
                 style: ChartStyle = Styles.lineChartStyleOne,
                 form: CGSize? = ChartForm.medium,
@@ -195,13 +197,13 @@ public struct LineChartView: View {
                 Divider()
                     .padding(.leading, 25)
                     .padding(.bottom, 3)
-                Text("Time (ms)")
+                Text(self.xaxis)
                     .font(.system(size: 11, weight: .bold, design: .default))
                     .foregroundColor(self.colorScheme == .dark ?  self.darkModeStyle.legendTextColor :self.style.legendTextColor)
                     .offset(y: -5)
             }
             HStack {
-                Text("Velocity (°/s)")
+                Text(self.yaxis)
                     .font(.system(size: 11, weight: .bold, design: .default))
                     .foregroundColor(self.colorScheme == .dark ?          self.darkModeStyle.legendTextColor :self.style.legendTextColor)
                     .rotationEffect(.degrees(-90))
