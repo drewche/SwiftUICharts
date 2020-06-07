@@ -62,6 +62,8 @@ public struct LineChartView: View {
         self.headData = ChartData(points: headData)
         self.title = title
         self.legend = legend
+        self.xaxis = xaxis
+        self.yaxis = yaxis
         self.style = style
         self.darkModeStyle = style.darkModeStyle != nil ? style.darkModeStyle! : Styles.lineViewDarkMode
         self.formSize = form!
