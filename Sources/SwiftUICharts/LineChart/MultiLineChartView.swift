@@ -114,7 +114,7 @@ public struct MultiLineChartView: View {
                         }
                     }
                 }
-                .frame(width: self.formSize.width, height: self.formSize.height)
+                .frame(width: self.formSize.width, height: self.formSize.height - 30)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .offset(x: 0, y: 0)
             }.frame(width: self.formSize.width, height: self.formSize.height)
