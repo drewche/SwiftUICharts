@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>57D872F0-B606-4FF0-851A-290F4C407867</key>
+		<key>1D4F7FD3-0065-400E-9BE5-DD65E9801321</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,24 +15,24 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
 			<key>fileName</key>
-			<string>57D872F0-B606-4FF0-851A-290F4C407867.xcactivitylog</string>
+			<string>1D4F7FD3-0065-400E-9BE5-DD65E9801321.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>E</string>
 			</dict>
 			<key>signature</key>
 			<string>SwiftUICharts-ecfvesigucxwxbfloicaxsnnlaga</string>
 			<key>timeStartedRecording</key>
-			<real>613254297.95229197</real>
+			<real>613258072.94936299</real>
 			<key>timeStoppedRecording</key>
-			<real>613254318.82989001</real>
+			<real>613258075.62994301</real>
 			<key>title</key>
 			<string>Build target SwiftUICharts</string>
 			<key>uniqueIdentifier</key>
-			<string>57D872F0-B606-4FF0-851A-290F4C407867</string>
+			<string>1D4F7FD3-0065-400E-9BE5-DD65E9801321</string>
 		</dict>
 		<key>595672A3-1452-488B-8DC3-32A51F546B63</key>
 		<dict>

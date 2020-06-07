@@ -13,9 +13,9 @@ public struct LineChartView: View {
     @ObservedObject var data:ChartData
     @ObservedObject var headData:ChartData
     public var title: String
-    public var legend: String?
     public var xaxis: String
     public var yaxis: String
+    public var legend: String?
     public var style: ChartStyle
     public var darkModeStyle: ChartStyle
     
@@ -61,9 +61,9 @@ public struct LineChartView: View {
         self.data = ChartData(points: data)
         self.headData = ChartData(points: headData)
         self.title = title
-        self.legend = legend
         self.xaxis = xaxis
         self.yaxis = yaxis
+        self.legend = legend
         self.style = style
         self.darkModeStyle = style.darkModeStyle != nil ? style.darkModeStyle! : Styles.lineViewDarkMode
         self.formSize = form!
@@ -251,7 +251,7 @@ public struct LineChartView: View {
 struct WidgetView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LineChartView(data: [0.3,0.2,0.1,0.4,0.6,0.5,0.4,0.1,0.1], headData: [-0.3,-0.2,-0.1,-0.4,-0.6,-0.5,-0.4,-0.1,-0.1], title: "Line chart", legend: "Basic", xaxis: "abc", yaxis: "xyz")
+            LineChartView(data: [0.3,0.2,0.1,0.4,0.6,0.5,0.4,0.1,0.1], headData: [-0.3,-0.2,-0.1,-0.4,-0.6,-0.5,-0.4,-0.1,-0.1], title: "Line chart", xaxis: "abc", yaxis: "xyz", legend: "Basic")
                 .environment(\.colorScheme, .light)
         }
     }
