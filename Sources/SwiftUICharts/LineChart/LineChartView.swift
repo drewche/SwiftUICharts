@@ -249,7 +249,7 @@ public struct LineChartView: View {
 struct WidgetView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LineChartView(data: [0.3,0.2,0.1,0.4,0.6,0.5,0.4,0.1,0.1], headData: [-0.3,-0.2,-0.1,-0.4,-0.6,-0.5,-0.4,-0.1,-0.1], title: "Line chart", legend: "Basic")
+            LineChartView(data: [0.3,0.2,0.1,0.4,0.6,0.5,0.4,0.1,0.1], headData: [-0.3,-0.2,-0.1,-0.4,-0.6,-0.5,-0.4,-0.1,-0.1], xaxis: "abc", yaxis: "xyz", title: "Line chart", legend: "Basic")
                 .environment(\.colorScheme, .light)
         }
     }
