@@ -14,6 +14,8 @@ public struct LineChartView: View {
     @ObservedObject var headData:ChartData
     public var title: String
     public var legend: String?
+    public var xaxis: String
+    public var yaxis: String
     public var style: ChartStyle
     public var darkModeStyle: ChartStyle
     
