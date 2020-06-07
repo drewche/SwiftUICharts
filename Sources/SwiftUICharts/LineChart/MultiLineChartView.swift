@@ -98,7 +98,6 @@ public struct MultiLineChartView: View {
                     }
                     .transition(.scale)
                 }
-                Spacer()
                 GeometryReader{ geometry in
                     ZStack{
                         ForEach(0..<self.data.count) { i in
@@ -115,7 +114,7 @@ public struct MultiLineChartView: View {
                         }
                     }
                 }
-                .frame(width: frame.width, height: frame.height + 30)
+                .frame(width: self.formSize.width, height: self.formSize.height)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .offset(x: 0, y: 0)
             }.frame(width: self.formSize.width, height: self.formSize.height)
