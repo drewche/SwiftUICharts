@@ -1,6 +1,0 @@
-version: "Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
-options: "099e5292d55d21ea5ef46387dd7c2fa6"
-build_time: [1588473004, 666628000]
-inputs:
-  "/Users/drewche/Documents/ChartView/Tests/SwiftUIChartsTests/SwiftUIChartsTests.swift": [1587910949, 0]
-  "/Users/drewche/Documents/ChartView/Tests/SwiftUIChartsTests/XCTestManifests.swift": [1587910949, 0]

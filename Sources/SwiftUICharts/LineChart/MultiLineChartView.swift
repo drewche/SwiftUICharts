@@ -138,7 +138,7 @@ public struct MultiLineChartView: View {
                     .font(.system(size: 11, weight: .bold, design: .default))
                     .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.legendTextColor :self.style.legendTextColor)
                     .rotationEffect(.degrees(-90))
-                    .offset(x: -25)
+                    .offset(x: -5)
                 Divider()
                     .offset(x: -60)
                     .padding(.bottom, 25)
