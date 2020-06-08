@@ -77,7 +77,6 @@ public struct MultiLineChartView: View {
                     VStack(alignment: .leading, spacing: 8){
                         Text(self.title)
                             .font(.headline)
-                            .bold()
                             .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.textColor : self.style.textColor)
                         if (self.legend != nil){
                             Text(self.legend!)
@@ -114,10 +113,32 @@ public struct MultiLineChartView: View {
                         }
                     }
                 }
-                .frame(width: self.formSize.width, height: self.formSize.height - 30)
+                .frame(width: self.formSize.width - 30, height: self.formSize.height - 50)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .offset(x: 0, y: 0)
             }.frame(width: self.formSize.width, height: self.formSize.height)
+            VStack {
+                Spacer()
+                Divider()
+                    .padding(.leading, 25)
+                    .padding(.bottom, 3)
+                Text(self.xaxis)
+                    .font(.system(size: 11, weight: .bold, design: .default))
+                    .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.legendTextColor :self.style.legendTextColor)
+                    .offset(y: -5)
+            }
+            HStack {
+                Text(self.yaxis)
+                    .font(.system(size: 11, weight: .bold, design: .default))
+                    .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.legendTextColor :self.style.legendTextColor)
+                    .rotationEffect(.degrees(-90))
+                    .offset(x: -25)
+                Divider()
+                    .offset(x: -60)
+                    .padding(.bottom, 25)
+                    .padding(.top, 35)
+                Spacer()
+            }
         }
         .gesture(DragGesture()
         .onChanged({ value in
