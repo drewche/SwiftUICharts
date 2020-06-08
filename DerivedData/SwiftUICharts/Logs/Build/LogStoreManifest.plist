@@ -6,40 +6,6 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>67914802-55EE-4467-9E93-63AC85D03476</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>67914802-55EE-4467-9E93-63AC85D03476.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>SwiftUICharts</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SwiftUICharts</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Build SwiftUICharts</string>
-			<key>timeStartedRecording</key>
-			<real>613254297.49695098</real>
-			<key>timeStoppedRecording</key>
-			<real>613254319.92530704</real>
-			<key>title</key>
-			<string>Build SwiftUICharts</string>
-			<key>uniqueIdentifier</key>
-			<string>67914802-55EE-4467-9E93-63AC85D03476</string>
-		</dict>
 		<key>81AA36FE-5A07-4AB7-BB22-E47F00548D59</key>
 		<dict>
 			<key>className</key>

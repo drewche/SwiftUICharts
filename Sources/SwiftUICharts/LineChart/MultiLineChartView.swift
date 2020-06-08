@@ -121,7 +121,7 @@ public struct MultiLineChartView: View {
                 }
                 .frame(width: self.formSize.width - 30, height: self.formSize.height - 50)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
-                .offset(x: 0, y: 0)
+                .offset(x: 10, y: -10)
             }.frame(width: self.formSize.width, height: self.formSize.height)
             VStack {
                 Spacer()
@@ -175,7 +175,7 @@ public struct MultiLineChartView: View {
 struct MultiWidgetView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            MultiLineChartView(data: [([8,23,54,32,12,37,7,23,43], GradientColors.orange)], title: "Line chart", xaxis: "abc", yaxis: "xyz", legend: "Basic")
+            MultiLineChartView(data: [([8,23,54,32,12,37,7,23,43], GradientColors.orange), ([-8,-23,-54,-32,-12,-37,-7,-23,-43], GradientColors.orange)], title: "Line chart", xaxis: "abc", yaxis: "xyz", form: CGSize(width: 340, height: 240))
                 .environment(\.colorScheme, .light)
         }
     }

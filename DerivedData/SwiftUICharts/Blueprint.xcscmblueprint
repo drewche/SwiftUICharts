@@ -10,9 +10,9 @@
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "E9BA05A7C6EBEE65D6BE511FC7CC0ADA2EAE9498" : "SwiftUICharts\/"
   },
-  "DVTSourceControlWorkspaceBlueprintNameKey" : ".",
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftUICharts",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
-  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : ".",
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SwiftUICharts.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/drewche\/SwiftUICharts.git",

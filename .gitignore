@@ -3,3 +3,6 @@
 /Packages
 /*.xcodeproj
 /DerivedData
+/Charts
+Charts.xcodeproj
+SwiftUICharts.xcworkspace
