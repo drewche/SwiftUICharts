@@ -35,14 +35,14 @@ public struct MultiLineChartView: View {
 //        if let min = data.flatMap({$0.onlyPoints()}).min() {
 //            return min
 //        }
-        return -400
+        return -300
     }
     
     var globalMax:Double {
 //        if let max = data.flatMap({$0.onlyPoints()}).max() {
 //            return max
 //        }
-        return 400
+        return 300
     }
     
     let frame = CGSize(width: 180, height: 120)
