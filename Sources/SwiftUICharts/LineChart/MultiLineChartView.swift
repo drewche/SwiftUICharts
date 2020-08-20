@@ -35,14 +35,14 @@ public struct MultiLineChartView: View {
         if let min = data.flatMap({$0.onlyPoints()}).min() {
             return min
         }
-        return 0
+        return -400
     }
     
     var globalMax:Double {
         if let max = data.flatMap({$0.onlyPoints()}).max() {
             return max
         }
-        return 0
+        return 400
     }
     
     let frame = CGSize(width: 180, height: 120)
@@ -125,9 +125,9 @@ public struct MultiLineChartView: View {
             }.frame(width: self.formSize.width, height: self.formSize.height)
             VStack {
                 Spacer()
-                Divider()
-                    .padding(.leading, 25)
-                    .padding(.bottom, 3)
+//                Divider()
+//                    .padding(.leading, 25)
+//                    .padding(.bottom, 3)
                 Text(self.xaxis)
                     .font(.system(size: 11, weight: .bold, design: .default))
                     .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.legendTextColor :self.style.legendTextColor)
@@ -139,10 +139,10 @@ public struct MultiLineChartView: View {
                     .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.legendTextColor :self.style.legendTextColor)
                     .rotationEffect(.degrees(-90))
                     .offset(x: -5)
-                Divider()
-                    .offset(x: -60)
-                    .padding(.bottom, 25)
-                    .padding(.top, 35)
+//                Divider()
+//                    .offset(x: -60)
+//                    .padding(.bottom, 25)
+//                    .padding(.top, 35)
                 Spacer()
             }
         }
