@@ -32,16 +32,16 @@ public struct MultiLineChartView: View {
     }
     
     var globalMin:Double {
-        if let min = data.flatMap({$0.onlyPoints()}).min() {
-            return min
-        }
+//        if let min = data.flatMap({$0.onlyPoints()}).min() {
+//            return min
+//        }
         return -400
     }
     
     var globalMax:Double {
-        if let max = data.flatMap({$0.onlyPoints()}).max() {
-            return max
-        }
+//        if let max = data.flatMap({$0.onlyPoints()}).max() {
+//            return max
+//        }
         return 400
     }
     
